@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Joke Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <header class="header">
+        <span class="label">JAVASCRIPT API PROJECT</span>
+            <h1>Random Joke Generator</h1>
+            <p>Fetch a random joke from a public API and display it dynamically.</p>
+        </header>
+        <section class="joke-card">
+            <div class="card-icon">☺</div>
+            <h2 id="jokeTitle">Ready for a joke?</h2>
+            <div class="joke-content">
+                <p id="jokeText">Click the button below to fetch a random joke.</p>
+            </div>
+            <p
+                id="loading"
+                class="loading hidden"
+            >
+                Fetching a joke...
+            </p>
+            <p id="error" class="error hidden">Unable to fetch a joke. Please try again.</p>
+            <button
+                id="jokeButton"
+                class="joke-button"
+            >
+                Get Random Joke
+            </button>
+        </section>
+        <section class="info">
+            <div class="info-box">
+                <strong>API</strong>
+                <span>Public Joke API</span>
+            </div>
+            <div class="info-box">
+                <strong>Method</strong>
+                <span>JavaScript Fetch API</span>
+            </div>
+            <div class="info-box">
+                <strong>Output</strong>
+                <span>Dynamic JSON Data</span>
+            </div>
+        </section>
+        <footer>Built with HTML, CSS & JavaScript</footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

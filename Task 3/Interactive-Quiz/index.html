@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="quiz-container">
+        <header class="quiz-header">
+            <span class="quiz-label">INTERACTIVE QUIZ</span>
+            <h1>Web Development Quiz</h1>
+            <p>Test your knowledge of HTML, CSS and JavaScript.</p>
+        </header>
+        <section class="quiz-card" id="quizCard">
+            <div class="quiz-top">
+                <span id="questionNumber">Question 1 of 5</span>
+                <span id="score">Score: 0</span>
+            </div>
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+            <h2 id="question">
+                Which language is used to structure a webpage?
+            </h2>
+            <div class="options" id="options">
+                <button class="option" data-answer="CSS">
+                    CSS
+                </button>
+                <button class="option" data-answer="HTML">
+                    HTML
+                </button>
+                <button class="option" data-answer="JavaScript">
+                    JavaScript
+                </button>
+                <button class="option" data-answer="SQL">
+                    SQL
+                </button>
+            </div>
+            <p id="feedback" class="feedback"></p>
+            <button id="nextButton" class="next-button" disabled>
+                Next Question
+            </button>
+        </section>
+        <section class="result-card hidden" id="resultCard">
+            <div class="result-icon">✓</div>
+            <span class="quiz-label">QUIZ COMPLETED</span>
+            <h2>Your Final Score</h2>
+            <div class="final-score" id="finalScore">0 / 5</div>
+            <p id="resultMessage">Great work!</p>
+            <button id="restartButton" class="restart-button">Take Quiz Again</button>
+        </section>
+        <footer>
+            <p>Built with HTML, CSS & JavaScript</p>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

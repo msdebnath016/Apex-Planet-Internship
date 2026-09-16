@@ -1,0 +1,389 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background: #f6f8fb;
+    color: #172033;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.header {
+    background: #ffffff;
+    border-bottom: 1px solid #e7eaf0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    width: min(1120px, 92%);
+    margin: auto;
+    min-height: 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #126e82;
+    letter-spacing: 0.5px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #384255;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #126e82;
+}
+
+.hero {
+    min-height: 600px;
+    padding: 80px 4%;
+    display: flex;
+    align-items: center;
+    background:
+        linear-gradient(135deg, #dff7f5, #eef3ff);
+}
+
+.hero-content {
+    width: min(1120px, 92%);
+    margin: auto;
+}
+
+.tagline {
+    display: inline-block;
+    margin-bottom: 18px;
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #126e82;
+}
+
+.hero h1 {
+    max-width: 750px;
+    margin-bottom: 22px;
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    line-height: 1.05;
+    color: #172033;
+}
+
+.hero p {
+    max-width: 650px;
+    margin-bottom: 32px;
+    font-size: 1.1rem;
+    color: #596477;
+}
+
+.hero-btn,
+.cta-btn {
+    display: inline-block;
+    padding: 13px 24px;
+    border-radius: 7px;
+    background: #126e82;
+    color: #ffffff;
+    font-weight: 700;
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease;
+}
+
+.hero-btn:hover,
+.cta-btn:hover {
+    background: #0d5363;
+    transform: translateY(-2px);
+}
+
+.services {
+    width: min(1120px, 92%);
+    margin: auto;
+    padding: 90px 0;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-heading span,
+.about-content > span {
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #126e82;
+}
+
+.section-heading h2,
+.about-content h2,
+.cta h2 {
+    margin: 8px 0 12px;
+    font-size: 2.3rem;
+}
+
+.section-heading p {
+    color: #697386;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.service-card {
+    padding: 30px 24px;
+    background: #ffffff;
+    border: 1px solid #e7eaf0;
+    border-radius: 12px;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(30, 45, 70, 0.1);
+}
+
+.icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: #dff7f5;
+    color: #126e82;
+    font-weight: 800;
+}
+
+.service-card h3 {
+    margin-bottom: 10px;
+    font-size: 1.15rem;
+}
+
+.service-card p {
+    color: #697386;
+    font-size: 0.95rem;
+}
+
+.about {
+    padding: 90px 4%;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 60px;
+    align-items: center;
+    background: #172033;
+    color: #ffffff;
+}
+
+.about-content {
+    width: min(650px, 100%);
+    justify-self: end;
+}
+
+.about-content h2 {
+    color: #ffffff;
+}
+
+.about-content p {
+    margin-top: 15px;
+    color: #c5ccd8;
+}
+
+.about-box {
+    width: min(280px, 100%);
+    padding: 45px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #425069;
+    border-radius: 15px;
+}
+
+.about-box strong {
+    font-size: 4rem;
+    line-height: 1;
+    color: #ffffff;
+}
+
+.about-box span {
+    margin-top: 12px;
+    color: #c5ccd8;
+}
+
+.cta {
+    width: min(800px, 92%);
+    margin: auto;
+    padding: 90px 0;
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: 2.2rem;
+}
+
+.cta p {
+    max-width: 600px;
+    margin: 0 auto 28px;
+    color: #697386;
+}
+
+.footer {
+    padding: 25px;
+    text-align: center;
+    background: #ffffff;
+    border-top: 1px solid #e7eaf0;
+    color: #697386;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 1024px) {
+
+    .navbar {
+        min-height: 65px;
+    }
+
+    .hero {
+        min-height: 520px;
+    }
+
+    .hero h1 {
+        max-width: 650px;
+    }
+
+    .service-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .navbar {
+        flex-direction: column;
+        padding: 18px 0;
+        gap: 14px;
+    }
+
+    .nav-links {
+        width: 100%;
+        justify-content: center;
+        gap: 18px;
+        flex-wrap: wrap;
+    }
+
+    .nav-links a {
+        font-size: 0.85rem;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 80px 0;
+        text-align: center;
+    }
+
+    .hero-content {
+        width: 92%;
+    }
+
+    .hero h1 {
+        font-size: 2.6rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .services {
+        padding: 65px 0;
+    }
+
+    .section-heading h2,
+    .about-content h2,
+    .cta h2 {
+        font-size: 1.9rem;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card {
+        padding: 25px 22px;
+    }
+
+    .about {
+        padding: 65px 4%;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .about-content {
+        justify-self: center;
+    }
+
+    .about-box {
+        margin: auto;
+    }
+
+    .cta {
+        padding: 65px 0;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 0.78rem;
+    }
+
+    .hero-btn,
+    .cta-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-box strong {
+        font-size: 3.2rem;
+    }
+}
